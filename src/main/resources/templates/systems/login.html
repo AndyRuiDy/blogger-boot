@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="common/include :: header"></head>
+<body class="bl-login">
+
+    <div class="login">
+        <form action="" method="POST" th:action="@{/user/login}">
+            <div class="l-box">
+                <p><input class="inpt" type="text" placeholder="请输入账户" name="username"></p>
+                <p><input class="inpt" type="password" placeholder="请输入密码" name="password"></p>
+                <p><input class="code" type="text" placeholder="验证码" name=""></p>
+                <p><button type="submit" class="btn bg-white btn-sm" style="height:50px;width: 100%;line-height: 25px;" role="button" aria-pressed="true">登&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;录</button></p>
+                <div class="forgetAndRem">
+                    <span class="remem"><input class="chb" type="checkbox"><span class="account">记住账户</span></span>
+                    <a href="#" class="forget">忘记密码？</a>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <p class="reserved">&copy;2018&nbsp; zhush.com&nbsp; All&nbsp;&nbsp;Rights&nbsp;&nbsp;Reserved&nbsp;&nbsp;&nbsp;版权所有</p>
+<div th:replace="common/include :: footer"></div>
+</body>
+</html>

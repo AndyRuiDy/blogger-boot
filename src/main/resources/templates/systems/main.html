@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="common/include :: header"></head>
+<body class="w-100 h-100">
+  <!-- 左侧菜单栏 start -->
+  <div class="row h-100" style="margin-right: 0 !important;">
+    <div id="bl-aside" class="col-md-2 h-100" style="padding-right: 0 !important;">
+      <aside class="w-100 h-100">
+        <nav class="sidebar-nav h-100">
+          <ul class="metismenu" id="bloggerMenu">
+            <li class="text-center text-white m-auto pt-3">
+              <img src="../../static/images/blog-08.jpg" alt="" class="center-block rounded-circle" width="70" height="70">
+              <p class="mt-2">adminZhu</p>
+            </li>
+            <li>
+              <a class="has-arrow" href="#">
+                <span class="fa fa-fw fa-github fa-lg"></span>
+                andyRuiDy
+              </a>
+              <ul class="animated flip">
+                <li>
+                  <a href="https://github.com/onokumus/metisMenu">
+                    <span class="fa fa-fw fa-code-fork"></span> Fork
+                  </a>
+                </li>
+                <li>
+                  <a href="https://github.com/onokumus/metisMenu">
+                    <span class="fa fa-fw fa-star"></span> Star
+                  </a>
+                </li>
+                <li>
+                  <a href="https://github.com/onokumus/metisMenu/issues">
+                    <span class="fa fa-fw fa-exclamation-triangle"></span> Issues
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a class="has-arrow" href="#" aria-expanded="false">
+                <span class="fa fa-fw fa-clone fa-lg"></span>
+                分类管理
+              </a>
+              <ul class="animated flip">
+                <li><a href="#">item 0.1</a></li>
+                <li><a href="#">item 0.2</a></li>
+                <li><a href="http://onokumus.com">onokumus</a></li>
+                <li><a href="#">item 0.4</a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="has-arrow" href="#" aria-expanded="false">
+                <span class="fa fa-fw fa-files-o fa-lg"></span>
+                文章管理
+              </a>
+              <ul class="animated flip">
+                <li><a href="#">item 0.1</a></li>
+                <li><a href="#">item 0.2</a></li>
+                <li><a href="http://onokumus.com">onokumus</a></li>
+                <li><a href="#">item 0.4</a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="has-arrow" href="#" aria-expanded="false">
+                <span class="fa fa-fw fa-comments-o fa-lg"></span>
+                文章评价
+              </a>
+              <ul class="animated flip">
+                <li><a href="#">item 0.1</a></li>
+                <li><a href="#">item 0.2</a></li>
+                <li><a href="http://onokumus.com">onokumus</a></li>
+                <li><a href="#">item 0.4</a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="has-arrow" href="#" aria-expanded="false">
+                <span class="fa fa-fw fa-link fa-lg"></span>
+                友情链接
+              </a>
+              <ul class="animated flip">
+                <li><a href="#">item 0.1</a></li>
+                <li><a href="#">item 0.2</a></li>
+                <li><a href="http://onokumus.com">onokumus</a></li>
+                <li><a href="#">item 0.4</a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="has-arrow" href="#" aria-expanded="false">
+                <span class="fa fa-fw fa-cog fa-lg"></span>
+                系统设置
+              </a>
+              <ul class="animated flip">
+                <li><a href="#"><i class="fa fa-user fa-fw bl-fa" aria-hidden="true"></i>用户管理</a></li>
+                <li><a href="#"><i class="fa fa-fw fa-users bl-fa" aria-hidden="true"></i>角色管理</a></li>
+                <li><a href="#"><i class="fa fa-fw fa-key bl-fa" aria-hidden="true"></i>权限管理</a></li>
+                <li><a href="#"><i class="fa fa-fw fa-file-text-o bl-fa" aria-hidden="true"></i>日志管理</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+    </div>
+    <!-- 左侧菜单栏 end -->
+
+    <!-- content start -->
+    <main id="bl-main" class="col-md-8 ml-sm-auto col-lg-10 h-100" role="main" style="padding: 0 !important;position: relative;">
+      <div class="container-fluid" style="height: 60px;position: absolute;top: 0;right: 0">
+        <nav class="navbar" role="navigation">
+          <a href="javascript:void(0)" id="bl-bars">
+            <i class="fa fa-home fa-2x" style="color: #09134B;margin-top: 5px !important;" aria-hidden="true"></i>
+          </a>
+          <ul class="navbar nav " style="margin: 3px !important; font-size: 18px;">
+            <li class="nav-item mr-4">
+              <a href="#" class="bl-color">
+                <i class="fa fa-user fa-fw"></i>
+                adminZhu
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="bl-color">
+                <i class="fa fa-sign-out" aria-hidden="true"></i>
+                退出
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <img th:src="@{images/blog-09.jpg}" width="100%" height="100%">
+      <p class="reserved">&copy;2018&nbsp; zhush.com&nbsp; All&nbsp;&nbsp;Rights&nbsp;&nbsp;Reserved&nbsp;&nbsp;&nbsp;版权所有</p>
+    </main>
+  </div>
+  <!-- content end -->
+
+<div th:replace="common/include :: footer"></div>
+<script type="text/javascript">
+  $(function() {
+
+    $('#bloggerMenu').metisMenu();
+
+  });
+</script>
+</body>
+</html>

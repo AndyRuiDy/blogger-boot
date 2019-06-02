@@ -1,0 +1,99 @@
+/*sidebar-nav start*/
+html{height:100%;}
+.sidebar-nav {
+    /*background: #212529;*/
+    background: #09134B;
+    /*height: 625px;*/
+    overflow: auto;
+}
+.sidebar-nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    background: #010935;
+}
+
+.sidebar-nav .metismenu {
+    background: #09134B;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.sidebar-nav .metismenu li + li {
+    margin-top: 5px;
+}
+
+.sidebar-nav .metismenu li:first-child {
+    margin-top: 5px;
+}
+.sidebar-nav .metismenu li:last-child {
+    margin-bottom: 5px;
+}
+
+
+.sidebar-nav .metismenu > li {
+    /*-webkit-box-flex: 1;
+    -ms-flex: 1 1 0%;
+    flex: 1 1 0%;*/
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: relative;
+}
+.sidebar-nav .metismenu a {
+    position: relative;
+    display: block;
+    padding: 13px 15px;
+    color: #adb5bd;
+    outline-width: 0;
+    transition: all .3s ease-out;
+}
+
+.sidebar-nav .metismenu ul a {
+    padding: 10px 15px 10px 30px;
+}
+
+.sidebar-nav .metismenu ul ul a {
+    padding: 10px 15px 10px 45px;
+}
+
+.sidebar-nav .metismenu a:hover,
+.sidebar-nav .metismenu a:focus,
+.sidebar-nav .metismenu a:active,
+.sidebar-nav .metismenu .mm-active > a {
+    color: #f8f9fa;
+    text-decoration: none;
+    background: #3280a7;
+}
+/*sidebar-nav end*/
+
+/*scroll start*/
+::-webkit-scrollbar {width: 14px;height: 14px; }
+::-webkit-scrollbar-track, ::-webkit-scrollbar-thumb {
+    border-radius: 999px; border: 5px solid transparent;
+}
+::-webkit-scrollbar-track {
+    box-shadow: 1px 1px 5px rgba(255,255,255,.5) inset;
+}
+::-webkit-scrollbar-thumb {
+    min-height: 20px; background-clip: content-box; box-shadow: 0 0 0 5px rgba(255,255,255,.5) inset;
+}
+::-webkit-scrollbar-corner {background: transparent;}
+/*scroll end*/
+
+.metismenu .fade .mm-collapse .mm-show {
+    opacity: 1;
+}
+
+.bl-color{color: #09134B;}
+.bl-fa{margin-right: 6px;}
+.reserved{position: absolute;left: 50%;bottom: 0.5%;transform: translate(-50%,-0.5%);font-size: 16px;color: #000;}

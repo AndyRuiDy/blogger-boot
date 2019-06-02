@@ -5,6 +5,7 @@ spring:
 # thymeleaf 配置
   thymeleaf:
     encoding: UTF-8
-    suffix: .html
+    mode: HTML5
     prefix: classpath:/templates/
+    suffix: .html
     cache: false
