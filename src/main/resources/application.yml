@@ -1,14 +1,10 @@
 spring:
-  datasource:
-    type: com.alibaba.druid.pool.DruidDataSource
-    driver-class-name: com.mysql.jdbc.Driver
-    druid:
-      master:
-        url: jdbc:mysql://127.0.0.1:3306/youblogger?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT
-        username: root
-        password: mysql@123
-      slave:
-        enabled: false
-        url:
-        username:
-        password:
+#  多文件配置
+  profiles:
+    active: druid
+# thymeleaf 配置
+  thymeleaf:
+    encoding: UTF-8
+    suffix: .html
+    prefix: classpath:/templates/
+    cache: false

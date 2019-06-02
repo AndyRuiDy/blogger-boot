@@ -28,6 +28,7 @@
         <bootstrap.version>4.3.1</bootstrap.version>
         <popper.version>1.15.0</popper.version>
         <fontawesome.version>4.7.0</fontawesome.version>
+        <animate.version>3.7.0</animate.version>
     </properties>
 
     <dependencies>
@@ -116,7 +117,7 @@
             <version>${bootstrap.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.webjars.npm</groupId>
+            <groupId>org.webjars</groupId>
             <artifactId>popper.js</artifactId>
             <version>${popper.version}</version>
         </dependency>
@@ -124,6 +125,11 @@
             <groupId>org.webjars.bowergithub.fortawesome</groupId>
             <artifactId>font-awesome</artifactId>
             <version>${fontawesome.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.webjars.npm</groupId>
+            <artifactId>animate.css</artifactId>
+            <version>${animate.version}</version>
         </dependency>
     </dependencies>
 

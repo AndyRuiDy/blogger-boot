@@ -10,18 +10,26 @@ import javax.sql.DataSource;
 
 /**
  * @author zhush
- * @Description:
+ * @Description: druid 多数据源配置
  * @date
  */
 @Configuration
 public class DruidConfig {
 
+    /**
+     * 主库配置
+     * @return
+     */
     @Bean
     @ConfigurationProperties(prefix = "spring.datasource.druid.master")
     public DataSource masterDataSource(){
         return DruidDataSourceBuilder.create().build();
     }
 
+    /**
+     * 从库配置
+     * @return
+     */
     @Bean
     @ConfigurationProperties(prefix = "spring.datasource.druid.slave")
     @ConditionalOnProperty(prefix = "spring.datasource.druid.slave", name = "enabled", havingValue = "true")
