@@ -23,7 +23,7 @@
         <druid.version>1.1.16</druid.version>
         <fastjson.version>1.2.47</fastjson.version>
         <thymeleaf.shiro.version>2.0.0</thymeleaf.shiro.version>
-        <shiro.version>1.4.1</shiro.version>
+        <shiro.version>1.6.0</shiro.version>
 
         <jquery.version>3.4.1</jquery.version>
         <bootstrap.version>4.3.1</bootstrap.version>
