@@ -21,7 +21,7 @@
         <mybatis.version>2.0.1</mybatis.version>
         <pagehelper.version>1.2.10</pagehelper.version>
         <druid.version>1.1.16</druid.version>
-        <fastjson.version>1.2.47</fastjson.version>
+        <fastjson.version>1.2.83</fastjson.version>
         <thymeleaf.shiro.version>2.0.0</thymeleaf.shiro.version>
         <shiro.version>1.4.1</shiro.version>
 
